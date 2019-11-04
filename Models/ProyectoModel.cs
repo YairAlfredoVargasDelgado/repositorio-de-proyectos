@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Models
 {
-    public class ProyectoModel
+    public class ProyectoModel : BaseModel
     {
         public string Código { get; set; }
 
@@ -14,6 +14,6 @@ namespace Models
 
         public DirectorModel Director { get; set; }
 
-        public IEnumerable<ProfesorModel> Calificadores { get; set; }
+        public IEnumerable<CalificadorModel> Calificadores { get; set; }
     }
 }

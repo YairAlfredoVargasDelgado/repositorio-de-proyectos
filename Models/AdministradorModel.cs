@@ -4,7 +4,7 @@ namespace Models
 {
     public class AdministradorModel : BaseModel
     {
-        IEnumerable<RúbricaModel> Rúbricas { get; set; }
+        public IEnumerable<RúbricaModel> Rúbricas { get; set; }
 
         public AdministradorModel() { }
     }

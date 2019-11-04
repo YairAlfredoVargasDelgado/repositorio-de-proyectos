@@ -9,5 +9,7 @@ namespace Models
         public string Nombre { get; set; }
 
         public IEnumerable<ProyectoModel> Proyectos { get; set; }
+
+        public AsignaturaModel() { }
     }
 }
