@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 
-namespace Models
+namespace Repositorio.Models
 {
     public class Rúbrica : BaseEntity
     {
         public ICollection<Criterio> Criterios { get; set; }
 
-        public Rúbrica() { }
+        public Rúbrica()
+        {
+            Criterios = new HashSet<Criterio>();
+        }
     }
 }

@@ -1,6 +1,6 @@
 using System;
 
-namespace Models
+namespace Repositorio.Models
 {
     public class Sesión : BaseEntity
     {

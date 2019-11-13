@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using repositorio.Models;
+using Repositorio.Models;
 
-namespace repositorio.Controllers
+namespace Repositorio.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Models
+namespace Repositorio.Models
 {
     public class Proyecto : BaseEntity
     {
@@ -14,8 +14,13 @@ namespace Models
 
         public Director Director { get; set; }
 
-        public ICollection<Calificador> Calificadores { get; set; }
+        public virtual ICollection<Calificador> Calificadores { get; set; }
 
-        
+        public Proyecto()
+        {
+            Calificadores = new HashSet<Calificador>();
+
+            Estudiantes = new HashSet<Estudiante>();
+        }
     }
 }

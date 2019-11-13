@@ -1,4 +1,4 @@
-namespace Models
+namespace Repositorio.Models
 {
     public class Criterio : BaseEntity
     {

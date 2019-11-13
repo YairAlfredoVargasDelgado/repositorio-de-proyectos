@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 
-namespace Models
+namespace Repositorio.Models
 {
-    public class Calificador
+    public class Calificador : Profesor
     {
-        public ICollection<Proyecto> Proyectos { get; set; }
+        public virtual ICollection<Proyecto> Proyectos { get; set; }
 
-        public Calificador() { }
+        public Calificador()
+        {
+            Proyectos = new HashSet<Proyecto>();
+        }
     }
 }

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Araos\\Documents\\Workspace\\repositorio\\repositorio.csproj",
+  "FilePath": "c:\\Users\\Araos\\Documents\\Workspace\\repositorio\\Repositorio.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14341,7 +14341,7 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "repositorio",
+  "RootNamespace": "Repositorio",
   "Documents": [
     {
       "FilePath": "Views\\Shared\\Error.cshtml",

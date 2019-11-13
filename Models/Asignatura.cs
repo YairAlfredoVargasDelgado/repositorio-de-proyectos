@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Models
+namespace Repositorio.Models
 {
     public class Asignatura : BaseEntity
     {
@@ -10,6 +10,9 @@ namespace Models
 
         public ICollection<Proyecto> Proyectos { get; set; }
 
-        public Asignatura() { }
+        public Asignatura()
+        {
+            Proyectos = new HashSet<Proyecto>();
+        }
     }
 }

@@ -1,6 +1,6 @@
-namespace Models
+namespace Repositorio.Models
 {
-    public class Persona
+    public class Persona : BaseEntity
     {
         public string Identificación { get; set; }
 

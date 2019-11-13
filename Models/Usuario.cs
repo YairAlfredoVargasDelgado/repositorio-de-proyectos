@@ -1,15 +1,18 @@
 using System.Collections.Generic;
 
-namespace Models
+namespace Repositorio.Models
 {
-    public class Usuario : BaseEntity
+    public class Usuario : Persona
     {
         public string CorreoElectrónico { get; set; }
 
         public string Contraseña { get; set; }
 
-        public IEnumerable<Sesión> Sesiones;
+        public ICollection<Sesión> Sesiones;
 
-        public Usuario() { }
+        public Usuario()
+        {
+            Sesiones = new HashSet<Sesión>();
+        }
     }
 }

@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 
-namespace Models
+namespace Repositorio.Models
 {
-    public class Estudiante
+    public class Estudiante : Persona
     {
         public ICollection<Proyecto> Proyectos { get; set; }
 
-        public Estudiante() { }
+        public Estudiante()
+        {
+            Proyectos = new HashSet<Proyecto>();
+        }
     }
 }

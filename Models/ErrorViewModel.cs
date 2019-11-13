@@ -1,6 +1,6 @@
 using System;
 
-namespace repositorio.Models
+namespace Repositorio.Models
 {
     public class ErrorViewModel
     {
